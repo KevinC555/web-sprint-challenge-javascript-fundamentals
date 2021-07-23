@@ -25,15 +25,20 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
-
+Map - We use map when converting data, returns a brand new array and doesn't manipulate the original array, needs a return statement.
+Reduce - doesn't return a new array, it only returns a single value, used for multiplying, adding, subtracting and dividing. Can be used for anything.
+Filter - used for filtering data basewd on things that can be made true or false, like a boolean, which would be a good use case, when needing to filter things depending on a boolean. If true it is included in a new array, if false it is excluded. requires a return statement, returns a new array, does not manipulate the original.
 2. Explain the difference between a callback and a higher order function.
-
+higher order functions recieve other functions and callback functions are functions that are passed into other functions as arguments
 3. Explain what a closure is.
-
+A closure is when an inner function reaches out of its scope to grab a variable defined in an outer function
 4. Describe the four principles of the 'this' keyword.
-
+There's encapsulation, which is where variables are not exposed directly.
+Abstraction is only seeing the outside of an elemnt or car, not being b ale to see what's happening on the inside.
+Inheritance which means the parent can pass things to the child, however the child cannot pass things back up the line back to the parent.
+Polymorphism is where we can add the same thing to different objects, an example being car and motorcycle. We can add the method of drive to both objects.
 5. Why do we need super() in an extended class?
-
+We need extends and super because it does exactly what object.create and what parent.call do, it basically allows us to not have to rewrite attributes :D
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
 ## Instructions
