@@ -59,12 +59,12 @@ Use animalNames to populate and return the displayNames array with only the anim
 displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
 */
 
-function animalNames(animalNames) {
-	const displayNames = [];
-	animalNames.forEach(function (item) {
-		return displayNames.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`)
+function animalNames(array) {
+	const newArray = [];
+	array.forEach(function (item) {
+		return newArray.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`)
 	})
-	return dispalyNames;
+	return newArray;
 }
 
 
@@ -87,8 +87,11 @@ The zoo is concerned about animals with a lower population count.
 Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
 */
 
-function lowPopulationAnimals(/*Your Code Here*/) {
-	/*Your Code Here*/
+function lowPopulationAnimals(array) {
+	const smallPops = array.filter(function (item) {
+		return item.population < 5;
+	})
+	return smallPops;
 }
 
 
@@ -98,8 +101,11 @@ Using USApop find the total population from the zoos array using the .reduce() m
 Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count.
 */
 
-function USApop(/*Your Code Here*/) {
-	/*Your Code Here*/
+function USApop(array) {
+	const singleValue = array.reduce(function (accumulator, item) {
+		return accumulator + item.population;
+	}, 0)
+	return singleValue;
 }
 
 
